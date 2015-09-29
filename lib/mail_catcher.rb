@@ -61,6 +61,7 @@ module MailCatcher extend self
     :verbose => false,
     :daemon => !windows?,
     :browse => false,
+    :database_path => ":memory:",
     :quit => true,
   }
 
@@ -96,6 +97,10 @@ module MailCatcher extend self
 
         parser.on("--http-port PORT", Integer, "Set the port address of the http server") do |port|
           options[:http_port] = port
+        end
+
+        parser.on("--database-path PATH", "Set the path to the database") do |database_path|
+          options[:database_path] = database_path
         end
 
         parser.on("--no-quit", "Don't allow quitting the process") do
