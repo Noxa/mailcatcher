@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mailcatcher (0.6.1)
+    noxa-mailcatcher (0.6.1)
       activesupport (>= 4.0.0, < 5)
       eventmachine (~> 1.0.0, <= 1.0.5)
       mail (~> 2.3)
@@ -13,7 +13,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.0)
+    activesupport (4.2.4)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -47,7 +47,7 @@ GEM
     json (1.8.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.4.3)
+    mime-types (2.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
     rack (1.6.0)
@@ -88,7 +88,7 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    thread_safe (0.3.4)
+    thread_safe (0.3.5)
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -103,8 +103,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-script
   compass
-  mailcatcher!
   minitest (~> 5.0)
+  noxa-mailcatcher!
   rake
   rdoc
   sass

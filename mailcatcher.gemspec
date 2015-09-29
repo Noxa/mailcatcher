@@ -1,7 +1,7 @@
 require File.expand_path('../lib/mail_catcher/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = "mailcatcher"
+  s.name = "noxa-mailcatcher"
   s.version = MailCatcher::VERSION
   s.license = "MIT"
   s.summary = "Runs an SMTP server, catches and displays email in a web interface."
@@ -11,11 +11,14 @@ Gem::Specification.new do |s|
     mailcatcher, set your favourite app to deliver to
     smtp://127.0.0.1:1025 instead of your default SMTP server,
     then check out http://127.0.0.1:1080 to see the mail.
+    
+    The noxa-mailcatcher gem is a fork of the original gem by Samual Cochran
+    that adds an option to make the database persistent.
   END
 
-  s.author = "Samuel Cochran"
-  s.email = "sj26@sj26.com"
-  s.homepage = "http://mailcatcher.me"
+  s.authors = "Karst Hammer"
+  s.email = "k.hammer@youngcapital.nl"
+  s.homepage = "https://www.youngcapital.nl"
 
   s.files = Dir[
     "README.md", "LICENSE", "VERSION",
